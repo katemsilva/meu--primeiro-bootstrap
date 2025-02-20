@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katleen Moreira Silva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+    <header>
+        <h1>Bem vindo a minha página!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">INÍCIO</a></li>
+                <li><a href="#about">SOBRE MIM</a></li>
+                <li><a href="#" id="btn-contact">CONTATO</a></li>
+            </ul>
+        </nav>
+
+       <div id="modal-contact" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <h2>Entre em Contato</h2>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+        
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+       </div>
+
+    </header>
+    <main>
+        <h1>Sobre mim</h1>
+
+        <section class="container-grid">
+            <img src="my image.jpg" alt="Katleen Moreira Silva" style="max-width: 100%; height: 200px;">
+    
+            <p class="aboutme">My name is Katleen Moreira Silva. I am a web developer and this is my personal page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet condimentum orci, nec dictum velit. Curabitur vulputate scelerisque nisl, at lobortis libero malesuada quis. Donec ultricies pellentesque augue, in fringilla nisi mollis vel. Fusce eu ex malesuada, finibus justo efficitur, volutpat tortor. Phasellus at est at nisl molestie egestas. Duis facilisis sit amet erat vel pharetra. Maecenas finibus tortor eu eleifend volutpat. Phasellus vulputate elementum purus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </section>
+       
+           
+    </main>
+
+    <div class="container-projetos">
+        <div class="projeto">
+            <h3><a href="index1.html">Projeto 1</a></h3>
+            <p>In ac est dapibus, molestie est eu, consequat lorem. Donec eget massa laoreet, varius nisl nec, accumsan dui. Sed in velit vitae ex blandit luctus et consequat dolor. Fusce ultricies bibendum est non dapibus. Nam ut ante a nulla aliquet accumsan.</p>
+        </div>
+        <div class="projeto">
+            <h3><a href="index2.html">Projeto 2</a></h3>
+            <p>Pellentesque sit amet suscipit est. Vivamus urna quam, laoreet ac neque id, placerat efficitur lectus. Vestibulum a erat vel felis mattis fermentum.</p>
+        </div>
+        <div class="projeto">
+            <h3><a href="index3.html">Projeto 3</a></h3>
+            <p>Nulla euismod justo risus, vitae iaculis risus elementum a. Quisque efficitur pharetra cursus. Donec maximus luctus nulla in bibendum. Praesent nibh magna, scelerisque ut fermentum non, viverra nec lectus.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Katleen Moreira Silva</p>
+        <div class="social-media">
+        <a href="https://facebook.com" target="_blank" class="social-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+        </a>
+    </div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+
+
+</html>
