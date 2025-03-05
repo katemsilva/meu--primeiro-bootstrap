@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <img src="imagem.jpg" alt="Foto">
+        <h2>Katleen Silva</h2>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#educacao">Educação</a>
+            <a href="#" onclick="toggleContact(event)">Contato</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <section id="sobre" class="section">
+            <h2>Sobre</h2>
+            <p>Sou uma estudante do ensino médio 3°ano. Eu sou de SP, mas atualmente resido em Joinville, Santa Catarina.</p>
+        </section>
+
+        <section id="experiencia" class="section">
+            <h2>Experiência</h2>
+            <p></p>
+        </section>
+
+        <section id="educacao" class="section">
+            <h2>Educação</h2>
+            <p>Cursando Desenvolvimento de Sistemas no Senai</p>
+            <p>Cursando o 3°ano no Colégio Santo Antônio</p>
+        </section>
+
+    </main>
+    
+    <div class="overlay" id="overlay" onclick="toggleContact()"></div>
+    <div id="contact-info" class="contact-section">
+        <button class="close-btn" onclick="toggleContact()">&times;</button>
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <select id="estado" onchange="atualizarCidades()">
+                <option value="">Selecione seu Estado</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="SC">Santa Catarina</option>
+                <!-- Adicione os demais estados -->
+            </select>
+            <select id="cidade">
+                <option value="">Selecione sua Cidade</option>
+            </select>
+            <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <div id="notification" class="notification">Mensagem enviada com sucesso!</div>
+
+
+
+</body>
